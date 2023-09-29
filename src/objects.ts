@@ -142,6 +142,7 @@ export function duplicateQuestion(id: number, oldQuestion: Question): Question {
  * Check out the subsection about "Nested Fields" for more information.
  */
 export function addOption(question: Question, newOption: string): Question {
+    // eslint-disable-next-line prettier/prettier, no-extra-parens
     const updatedOptions = [...(question.options || []), newOption];
     const updatedQuestion: Question = {
         ...question,
