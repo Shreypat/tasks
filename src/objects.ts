@@ -10,7 +10,7 @@ export function makeBlankQuestion(
     name: string,
     type: QuestionType
 ): Question {
-    const blankQuestion: Question = {
+    return {
         id: id,
         name: name,
         type: type,
@@ -20,7 +20,6 @@ export function makeBlankQuestion(
         points: 1,
         published: false
     };
-    return blankQuestion;
 }
 
 /**
